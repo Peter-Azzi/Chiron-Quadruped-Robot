@@ -1,2 +1,6 @@
 # Chiron-Quadruped-Robot
 A robotics project designed to navigate uneven terrain. Built with SolidWorks, LabVIEW and Arduino Serial Communication, and tested across 17 terrain profiles with &lt;5% trajectory deviation.
+
+Chiron is engineered to operate in three primary locomotion modes: crawling using servo-actuated legs, driving using DC motor-powered wheels, and turning through servo-based wheel steering. The user interacts with the system through a graphical interface where pressing specific buttons triggers different movement modes—one for crawling, one for driving, and another for steering. The project showcases the integration of mechanical design, serial communication, and real-time instrumentation using LabVIEW and Arduino platforms. 
+The motion planning and control begin with LabVIEW, where the required joint angles for crawling and wheel steering are calculated. These angles are stored in shared variables and transmitted to an Arduino microcontroller via serial communication. The Arduino is programmed to drive both PCA9685-a 16-channel servo driver—used for leg articulation and wheel steering—and the L293D, a DC motor driver that controls the forward and reverse motion of the wheels.
+The goal of the Chiron project is to demonstrate the practical application of measurement and control systems in a dynamic robotic platform. 
